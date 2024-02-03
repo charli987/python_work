@@ -41,4 +41,9 @@ for i in var:
     print(i)
 
 #in checks if a string is in a string and prints the result as a bool
-print ("free" in var)
+print("afternoon" in var)
+print("afternoon" not in var)
+if "afternoon" in var:
+    print("no")
+
+#strings can be sliced to access certain parts
