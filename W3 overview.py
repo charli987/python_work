@@ -67,20 +67,20 @@ intro = "I am {0} years old and I was born in {1}"
 print(intro.format(age, year))
 
 #if you want to use a character in python that already has a purpose, use escape characters
-"""
-\"   =  Double Quote
-\'   =  Single Quote	
-\\	 =  Backslash	
-\n	 =  New Line	
-\r	 =  Carriage Return	
-\t	 =  Tab	
-\b	 =  Backspace	
-\f	 =  Form Feed	
-\ooo =	Octal value	
-\xhh =	Hex value
-"""
+
+#\'  =  Single Quote	
+#\\	 =  Backslash	
+#\n	 =  New Line	
+#\r	 =  Carriage Return	
+#\t	 =  Tab	
+#\b	 =  Backspace	
+#\f	 =  Form Feed	
+#\ooo =	Octal value	
+#\xhh =	Hex value
+
 
 #there are several methods that can be used on strings
+
 """
 capitalize()   = Converts the first character to upper case
 casefold()	   = Converts string into lower case
@@ -136,4 +136,8 @@ zfill()	       = Fills the string with a specified number of 0 values at the beg
 #Set        = unordered, unchangeable, unindexed, No duplicate members
 #Dictionary = ordered  , changeable  , indexed  , No duplicate members
 
-#
+#combine lists
+characters = ["a", "b", "c"]
+numbers = [1, 2, 3]
+characters.extend(numbers)
+print(characters)
