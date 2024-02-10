@@ -59,7 +59,6 @@ for integer in integers:                                 #prints each value in t
     print(integer)       
 for integer in integers:                                 #adding text into and after for loops
     print(f"{integer}, is a value in the list")
-print("i have finished")
 for value in range(1, 5):                                #print all values within range excluding final number
     print(value)
 
