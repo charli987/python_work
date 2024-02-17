@@ -13,7 +13,7 @@ r, y, g = colours
 
 #global variables are created outside functions and can be used throughout your code
 #local variables are created in functions and can only be used in that function
-#if you define a varibale in a function as global, it becomes global
+#if you define a variable in a function as global, it becomes global
 x = "hello"
 def function():
     y = "world"
@@ -67,7 +67,6 @@ intro = "I am {0} years old and I was born in {1}"
 print(intro.format(age, year))
 
 #if you want to use a character in python that already has a purpose, use escape characters
-
 #\'  =  Single Quote	
 #\\	 =  Backslash	
 #\n	 =  New Line	
@@ -80,7 +79,6 @@ print(intro.format(age, year))
 
 
 #there are several methods that can be used on strings
-
 """
 capitalize()   = Converts the first character to upper case
 casefold()	   = Converts string into lower case
@@ -141,3 +139,19 @@ characters = ["a", "b", "c"]
 numbers = [1, 2, 3]
 characters.extend(numbers)
 print(characters)
+
+#there are several methods that can be used on lists
+"""
+append()	=Adds an element at the end of the list
+clear()	    =Removes all the elements from the list
+copy()	    =Returns a copy of the list
+count()	    =Returns the number of elements with the specified value
+extend()	=Add the elements of a list (or any iterable), to the end of the current list
+index()	    =Returns the index of the first element with the specified value
+insert()	=Adds an element at the specified position
+pop()	    =Removes the element at the specified position
+remove()	=Removes the item with the specified value
+reverse()	=Reverses the order of the list
+sort()	    =Sorts the list
+"""
+
