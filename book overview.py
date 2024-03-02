@@ -55,11 +55,13 @@ print(len(list))                  #find how many items in a list
 
 #for loops
 integers = ["integer_1", "integer_2", "integer_3"]
-for integer in integers:                                 #prints each value in th list
-    print(integer)       
-for integer in integers:                                 #adding text into and after for loops
-    print(f"{integer}, is a value in the list")
-for value in range(1, 5):                                #print all values within range excluding final number
-    print(value)
+for i in integers:                                 #prints each value in the list
+    print(i)       
+for i in integers:                                 #adding text into and after for loops
+    print(f"{i}, is a value in the list")
+for i in range(1, 5):                                #print all values within range excluding final number
+    print(i)
 
 #you can customise sort to give a desired answer
+    
+print(integer_1[-1:-4])

@@ -140,6 +140,13 @@ numbers = [1, 2, 3]
 characters.extend(numbers)
 print(characters)
 
+#print last 3 items
+print(characters[-3:])
+
+#check if item is in list
+if "b" in characters:
+    print("yes")
+
 #there are several methods that can be used on lists
 """
 append()	=Adds an element at the end of the list
@@ -155,3 +162,12 @@ reverse()	=Reverses the order of the list
 sort()	    =Sorts the list
 """
 
+#list comprehension/ shorter syntax for making new list based off existing list
+animals = ["monkey", "tiger", "jaguar", "elephant"]
+t = ["a"]
+for x in animals:
+    if "t" in x:
+        t.append(x)
+print(t)
+
+T = [x for x in animals if "a" in x]   #same thing just shorter
