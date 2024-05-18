@@ -13,7 +13,7 @@ p5 = Pin(27, Pin.OUT)    #setting GP27 as an output and assigning a variable
 print(p5.value())
 
 while True:              #carries on forever
-    if p4.value() == 1   #if GP04 is on turn GP27 on
+    if p4.value() == 1:  #if GP04 is on turn GP27 on
         p5.on()
     else:
         p5.off()         #otherwise turn GP27 off
