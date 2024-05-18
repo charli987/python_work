@@ -27,7 +27,7 @@ f.write("the contents of the file have been replaced")   #rewrites file
 f.close()
 
 import os
-if os.path.exists("demofile.txt")      #checks if file exists
+if os.path.exists("demofile.txt"):      #checks if file exists
     os.remove("demofile.txt")          #deletes it if it does
 else:
     print("no file found")
