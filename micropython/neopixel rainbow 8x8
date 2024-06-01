@@ -1,0 +1,31 @@
+from machine import Pin
+from neopixel import NeoPixel
+bright = 10/100
+pin = Pin(14, Pin.OUT)
+np = NeoPixel(pin, 64)
+green = 0
+red = 165
+blue = 0
+for i in range(32):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    green = green +5
+    red = red -5
+    blue = blue
+    np.write()
+    print(np[i])
+    
+for i in range(32, 45):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    green = green-10
+    red = 0
+    blue = blue + 5
+    np.write()
+    print(np[i])
+    
+for i in range(45, 64):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    green = 0
+    red = red + 10
+    blue = blue + 5
+    np.write()
+    print(np[i])
