@@ -1,0 +1,85 @@
+from machine import Pin
+from neopixel import NeoPixel
+bright = 10/100
+pin = Pin(14, Pin.OUT)
+np = NeoPixel(pin, 64)
+green = 100
+red = 100
+blue = 100
+
+
+for i in range(3):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(3, 5):
+    np[i] = (0, 10, 0)
+    np.write()
+    
+for i in range(5, 8):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(8, 11):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(11, 13):
+    np[i] = (0, 10, 0)
+    np.write()
+    
+for i in range(13, 16):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+      
+for i in range(16, 19):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(19, 21):
+    np[i] = (0, 10, 0)
+    np.write()
+    
+for i in range(21, 24):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(24, 40):
+    np[i] = (0, 10, 0)
+    np.write()
+    
+for i in range(40, 43):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(43, 45):
+    np[i] = (0, 10, 0)
+    np.write()
+    
+for i in range(45, 48):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(48, 51):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(51, 53):
+    np[i] = (0, 10, 0)
+    np.write()
+    
+for i in range(53, 56):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(56, 59):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
+    
+for i in range(59, 61):
+    np[i] = (0, 10, 0)
+    np.write()
+    
+for i in range(61, 64):
+    np[i] = (int(green*bright), int(red*bright), int(blue*bright))
+    np.write()
